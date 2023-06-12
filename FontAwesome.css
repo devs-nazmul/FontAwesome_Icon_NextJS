@@ -8,7 +8,7 @@
 
 
 /*  Example HTML Icon Using /*
-/*  <i class="icon i-solid" data-icon="&#xf002;"></i> */
+/*  <i className='icon i-brand' data-icon={'\uf09b'}> </i>
 /* f002 is the Unicode you'll find in FontAwesome Website, at the Top. */
 
 
