@@ -1,5 +1,5 @@
 
-/* ----  Global.css 
+/* ----  Global.css  */
 
 /* Import This File into Your Main Global.css FIle  */
 /* This is Example /*
@@ -8,15 +8,15 @@
 
 
 /*  Example HTML Icon Using /*
-/*  <i class="icon i-solid" data-icon="&#xf002;"></i>
-/* f002 is the Unicode you'll find in FontAwesome Website, at the Top.
+/*  <i class="icon i-solid" data-icon="&#xf002;"></i> */
+/* f002 is the Unicode you'll find in FontAwesome Website, at the Top. */
 
 
 
-/* ----  FontAwesome.css 
+/* ----  FontAwesome.css  */
 
-/*Include All FontAewsome Fonts inside Public Folder in Nextjs.*/
-/*Then Add TypeFace for All Fonts Here*/
+/*Include All FontAewsome Fonts inside Public Folder in Nextjs.  */
+/*Then Add TypeFace for All Fonts Here */
 
 @font-face {
     font-family: 'FontAwesomeBrands';
@@ -33,11 +33,11 @@
     font-style: normal;
 }
 
-/* ----  Add Rest of The Font You Have.
+/* ----  Add Rest of The Font You Have.  */
 
 
 
-/* ---------------------------------------
+/* --------------------------------------- */
 
 
 
@@ -69,17 +69,23 @@
 
 
 
-/* ----  Add Rest of The Style Here.
+/* ----  Add Rest of The Style Here. */
 
 
 
-/* ---------------------------------------
+/* --------------------------------------- */
 
 
 
 /* Now Finally Get Icon Unicode From FontAwesonme, Copy Them, And Add inside Content \Unicode, Example Unicode { f09b }  */
 
-.icon:before {
+/* This is Necessary to Work Hover Effect Properly */
+
+.icon {
+     display: inline-block;
+}
+
+.icon::before {
      content: attr(data-icon);
      -webkit-font-smoothing: antialiased;
      display: inline-block;
@@ -87,9 +93,27 @@
      font-variant: normal;
      line-height: 1;
      text-rendering: auto;
+    
+     /* -- If you Want Hover & Transition */
+     transition: all 0.3s;
 
 }
 
-/* ----  Add Rest of Your Icon Here.
+
+
+/* If you want Hover Efferc, Add Extra Class to Each icon or Target by Parent. */
+/* For Example, If Github Icon */
+/* Do This in Separate File, Not in Icon CSS FIle */
+
+.github:hover {
+     background-color: lightblue;
+     color: white;
+     transform: scale(1.1);
+}
+
+
+
+
+
 
 
