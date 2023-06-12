@@ -1,0 +1,62 @@
+
+/* ----  Global.css 
+
+/* Import This File into Your Main Global.css FIle  */
+/* This is Example /*
+/* @import "../styles/FontAwesome.css"; /*
+
+
+
+/* ----  FontAwesome.css 
+
+/*Include All FontAewsome Fonts inside Public Folder in Nextjs.*/
+/*Then Add TypeFace for All Fonts Here*/
+
+@font-face {
+    font-family: 'FontAwesomeBrands';
+    src: url('/icons/fa-brands-400.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* ----  Add Rest of The Font You Have.
+
+
+
+/* ---------------------------------------
+
+
+
+/*.... Add Icon Style  ....*/
+
+.icon-solid {
+    font-family: 'FontAwesomeBrands';
+}
+
+.icon-regular {
+    font-family: 'FontAwesomeRegular';
+}
+
+/* ----  Add Rest of The Style Here.
+
+
+
+/* ---------------------------------------
+
+
+
+/* Now Finally Get Icon Unicode From FontAwesonme, Copy Them, And Add inside Content \Unicode, Example Unicode { f09b }  */
+
+.github:before{
+    content: '\f09b';
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+}
+
+/* ----  Add Rest of Your Icon Here.
+
+
